@@ -1,0 +1,36 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+  
+.marginator{
+  padding-left: 15px;
+}
+
+.red{
+  color: #d9534f;
+}
+
+.blue{
+  color: black;
+}
+a{
+  text-decoration: none;
+}
+.insta-c{
+  color:#fb3958;
+}
+.fb-c{
+  color:#4267B2
+}
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  
+  [class*="container"] {
+   width: auto;   
+  }
+  span{
+    font-size: 75%;
+  }
+}
+  
+

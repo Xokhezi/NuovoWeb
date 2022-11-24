@@ -1,0 +1,39 @@
+<mat-toolbar class="mobile">
+  <button mat-icon-button class="example-icon" [matMenuTriggerFor]="menu"
+    aria-label="Example icon-button with menu icon">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu">
+    <a href="" class="mat-menu-item">
+      <mat-icon>home</mat-icon>
+      <span>Home</span>
+    </a>
+    <a href="/products" class="mat-menu-item">
+      <mat-icon>shopping_bag</mat-icon>
+      <span>Products</span>
+    </a>
+    <a href="/technology" class="mat-menu-item">
+      <mat-icon>biotech</mat-icon>
+      <span>Technology</span>
+    </a>
+    <a href="/events" class="mat-menu-item">
+      <mat-icon>event</mat-icon>
+      <span>Events</span>
+    </a>
+    <a href="/contact" class="mat-menu-item">
+      <mat-icon>call</mat-icon>
+      <span>Contact</span>
+    </a>
+  </mat-menu>
+  <a href="">
+    <span class="marginator red mobile"> Light <i class="bi bi-lightbulb"></i></span><span class="blue">Therapy</span>
+  </a>
+  
+  <span class="example-spacer"></span>
+  <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+    <i class="bi bi-facebook fb-c fs-4"></i>
+  </button>
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+    <i class="bi bi-instagram insta-c fs-4"></i>
+  </button>
+</mat-toolbar>

@@ -1,0 +1,58 @@
+.top {
+    padding-top: 70px;
+}
+img{
+    max-width: 650px;
+    max-height: 650px;
+    align-self: center;
+    padding: 10px;
+    border-radius: 20px;
+}
+h1{
+    align-self: center;
+}
+.card {
+    padding: 10px;
+    margin: 0px;
+    max-width: 60%;
+    border-radius: 20px;
+    margin-top: 15px;
+    margin-bottom: 80px;
+    
+    box-shadow:
+        2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+        6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+        12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+        22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+        41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+        100px 100px 80px rgba(0, 0, 0, 0.07);
+    border: solid 0,3px;
+}
+.red{
+    color: #d9534f;
+}
+.center-content {
+    display: flex;
+    flex-direction:column ;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+    margin-top: 20px;
+    
+}
+
+.background-red{
+   
+    min-height: 100vh;
+    height: auto;
+    background: rgb(255,220,226);
+    background: linear-gradient(90deg, rgba(255,220,226,1) 0%, rgba(255,255,255,1) 100%);
+  }
+.pad{
+    padding-left: 20px;
+}
+i{
+   cursor: pointer;
+    padding-left: 10px;
+    max-width: 20px;
+}

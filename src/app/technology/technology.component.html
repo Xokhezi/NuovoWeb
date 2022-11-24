@@ -1,0 +1,28 @@
+<div class="top center-content">
+
+    <i class="bi red fs-1"(click)="switchArticle('previous')" (mouseenter)="hoverSwitchLeft()" (mouseleave)="hoverSwitchLeft()"
+        [class.bi-arrow-left-circle]="!hoverOnLeft" [class.bi-arrow-left-circle-fill]="hoverOnLeft"></i>
+       
+        <mat-card @slideTechno class="card">
+            <mat-card-header>
+                <mat-card-title>{{article.title}}</mat-card-title>
+            </mat-card-header>
+            <img mat-card-image src={{article.img}} alt="Nuovo Therapy article">
+            <mat-card-content>
+                <p class="center-content">
+                    {{article.summary}}
+                </p>
+            </mat-card-content>
+            <div class="center-content">
+                <mat-card-actions>
+                    <button class="btn btn-danger" [routerLink]="['/technology',article.id]">
+                        Detail</button>
+    
+                </mat-card-actions>
+            </div>
+        </mat-card>
+    <i class="bi red fs-1" (click)="switchArticle('next')" (mouseenter)="hoverSwitchRight()" (mouseleave)="hoverSwitchRight()"
+    [class.bi-arrow-right-circle]="!hoverOnRight" [class.bi-arrow-right-circle-fill]="hoverOnRight"></i>
+
+    
+</div>

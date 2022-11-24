@@ -1,0 +1,60 @@
+.top{
+    padding-top: 70px;
+}
+
+.background-red{
+    height:100%;
+    background: rgb(255,220,226);
+    background: linear-gradient(90deg, rgba(255,220,226,1) 0%, rgba(255,255,255,1) 100%);
+  }
+.card {
+    margin: 20px;
+    max-width: 250px;
+    border-radius: 20px;
+    background-color: #f0706c;
+    box-shadow:
+        2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+        6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+        12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+        22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+        41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+        100px 100px 80px rgba(0, 0, 0, 0.07);
+    border: solid 0,3px;
+}
+.blue-card{
+    background-color: #369ffc;
+}
+.input{
+    max-width: 400px;
+    display: inline-flex;
+}
+.display{
+  margin: auto;
+}
+
+.center-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    
+}
+
+.content-left{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: left;
+}
+
+
+.header-image {
+    background-size: cover;
+}
+
+.text-white {
+    color: black;
+}

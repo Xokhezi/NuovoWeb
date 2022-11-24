@@ -1,0 +1,135 @@
+.top {
+    padding-top: 70px;
+}
+.red{
+    color: #d9534f;
+}
+
+.card {
+    margin: 20px;
+    padding: 20px;
+    max-width: 100% !important;
+    width: auto !important;
+    height: auto !important;
+    border-radius: 20px;
+
+    box-shadow:
+        2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+        6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+        12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+        22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+        41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+        100px 100px 80px rgba(0, 0, 0, 0.07);
+    border: solid 0, 3px;
+}
+
+.center-content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    
+
+
+}
+
+.contact-text {
+    margin-bottom: 10px;
+}
+
+.background-red {
+    height: 100%;
+    background: rgb(255, 220, 226);
+    background: linear-gradient(90deg, rgba(255, 220, 226, 1) 0%, rgba(255, 255, 255, 1) 100%);
+}
+
+.icon-google {
+
+    display: inline-flex;
+    vertical-align: top;
+}
+
+.google-map {
+    border-radius: 20px;
+}
+
+
+.buttons {
+
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 5px;
+
+
+}
+
+.button {
+    margin: 5px;
+}
+
+.header {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    margin-top: 20px;
+    padding-left: 10px;
+}
+
+.expander {
+    cursor: pointer;
+}
+
+.avatar {
+    margin-right: 50px;
+    width: 80 px;
+    height: 80px;
+    border-radius: 100%;
+
+
+}
+
+.name {
+    margin-right: 50px;
+}
+
+.contact-card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 50px;
+    padding: 10px;
+    justify-content: space-around;
+    max-width: 100% !important;
+    width: auto !important;
+    height: auto !important;
+
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    /* For mobile phones: */
+    [class*="mobile"] {
+        display: block;
+        margin-top: 10px;
+        
+    }
+
+    [class*="contact-mobile"] {
+        display: block;
+        max-width: 50px;
+        
+    }
+
+    iframe {
+        max-width: 100% !important;
+        width: auto !important;
+        height: auto !important;
+    }
+}

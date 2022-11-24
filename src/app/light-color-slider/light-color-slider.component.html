@@ -1,0 +1,115 @@
+<div class="top" [class.background-red]="state=='red'" [class.background-blue]="state=='blue'">
+  <div *ngIf="state!='default'" class="d-flex justify-content-center ">
+    <mat-button-toggle-group name="favoriteColor" aria-label="Favorite Color">
+      <mat-button-toggle value="red" (click)="switchState('red')">Red</mat-button-toggle>
+      <mat-button-toggle value="blue" (click)="switchState('blue')">Blue</mat-button-toggle>
+    </mat-button-toggle-group>
+  </div>
+
+  <div @fade *ngIf="state=='default'" class="container marginat ">
+    <div class="default">
+      <img class="pad" width="300px" height="350px" src="assets/red.png" alt="Nuovo therapy products">
+      <div>
+        <h1>Light therapy</h1>
+        <h2>energy of future...</h2>
+        <button class="btn btn-danger btn-pad" (click)="startTour()">Lets Explore!</button>
+      </div>
+    </div>
+  </div>
+  <div *ngIf="state!='default'" class="contleft">
+    <div @fadeSideRed *ngIf="state=='red'" class="container marginat ">
+      <div class="red-hero">
+
+        <div class="text-center text-padding">
+          <h2 class="bgc-red">Benefits of Red Light</h2>
+          <p class="text-break 25rem">There are many variations of passages of Lorem Ipsum available, but the majority
+            have suffered alteration in some form, by injected humour, or randomised words which don't look even
+            slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't
+            anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to
+            repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a
+            dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem
+            Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected
+            humour, or non-characteristic words etc.</p>
+          <button class="btn btn-danger">More</button>
+        </div>
+      </div>
+      <div class="red-text ">
+        <h2 class="marg-cont">
+          <button mat-icon-button aria-label="Example icon button with a vertical three dot icon">
+            <mat-icon><span class="material-symbols-outlined">
+                arrow_back_ios
+              </span></mat-icon>
+          </button>
+          RD1500
+          <button mat-icon-button aria-label="Example icon button with a vertical three dot icon">
+            <mat-icon><span class="material-symbols-outlined">
+                arrow_forward_ios
+              </span></mat-icon>
+          </button>
+        </h2>
+
+        <img width="300px" height="400px" src="assets/red.png" alt="Red light therapy">
+        <div class="specs">
+          <div class="marker">
+            <p>Strengh</p>
+            <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="fitness_center"></mat-icon>
+          </div>
+          <div class="marker">
+            <p>Regeneration</p>
+            <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="self_improvement"></mat-icon>
+          </div>
+          <div class="marker">
+            <p>BloodFlow</p>
+            <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="bloodtype"></mat-icon>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div @fadeSideBlue *ngIf="state=='blue'" class="container marginat ">
+      <div class="blue-hero">
+        <div class="text-center text-padding">
+          <h2 class="bgc-blue">Benefits of Blue Light</h2>
+          <p class="text-break 25rem">There are many variations of passages of Lorem Ipsum available, but the majority
+            have suffered alteration in some form, by injected humour, or randomised words which don't look even
+            slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't
+            anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to
+            repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a
+            dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem
+            Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected
+            humour, or non-characteristic words etc.</p>
+          <button class="btn btn-primary">More</button>
+        </div>
+      </div>
+      <div class="blue-text ">
+        <h2 class="marg-cont">
+          <button mat-icon-button aria-label="Example icon button with a vertical three dot icon">
+            <mat-icon><span class="material-symbols-outlined">
+                arrow_back_ios
+              </span></mat-icon>
+          </button>
+          RD500 Blue
+          <button mat-icon-button aria-label="Example icon button with a vertical three dot icon">
+            <mat-icon><span class="material-symbols-outlined">
+                arrow_forward_ios
+              </span></mat-icon>
+          </button>
+        </h2>
+        <img width="300px" height="400px" src="assets/blue.png" alt="Blue light therapy">
+        <div class="specs">
+          <div class="marker">
+            <p>Relax</p>
+            <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="spa"></mat-icon>
+          </div>
+          <div class="marker">
+            <p>Beauty</p>
+            <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="face_4"></mat-icon>
+          </div>
+          <div class="marker">
+            <p>Cleaning</p>
+            <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="sanitizer"></mat-icon>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
