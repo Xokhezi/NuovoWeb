@@ -33,19 +33,19 @@
       <div class="red-text ">
         <h2 class="marg-cont">
           <button mat-icon-button aria-label="Example icon button with a vertical three dot icon">
-            <mat-icon><span class="material-symbols-outlined">
+            <mat-icon><span class="material-symbols-outlined" (click)="switchProduct('previous', 'red')">
                 arrow_back_ios
               </span></mat-icon>
           </button>
-          RD1500
+          {{product.name}}
           <button mat-icon-button aria-label="Example icon button with a vertical three dot icon">
-            <mat-icon><span class="material-symbols-outlined">
+            <mat-icon><span class="material-symbols-outlined" (click)="switchProduct('next', 'red')">
                 arrow_forward_ios
               </span></mat-icon>
           </button>
         </h2>
 
-        <img class="img" src="assets/red.png" alt="Red light therapy">
+        <img class="img" src="{{product.url}}" alt="Red light therapy">
         <div class="specs">
           <div class="marker">
             <p>Strengh</p>
@@ -78,18 +78,18 @@
       <div class="blue-text ">
         <h2 class="marg-cont">
           <button mat-icon-button aria-label="Example icon button with a vertical three dot icon">
-            <mat-icon><span class="material-symbols-outlined">
+            <mat-icon><span class="material-symbols-outlined" (click)="switchProduct('previous', 'blue')">
                 arrow_back_ios
               </span></mat-icon>
           </button>
-          RD500 Blue
+          {{product.name}}
           <button mat-icon-button aria-label="Example icon button with a vertical three dot icon">
-            <mat-icon><span class="material-symbols-outlined">
+            <mat-icon><span class="material-symbols-outlined" (click)="switchProduct('next', 'blue')">
                 arrow_forward_ios
               </span></mat-icon>
           </button>
         </h2>
-        <img class="img" src="assets/blue.png" alt="Blue light therapy">
+        <img class="img" src={{product.url}} alt="Blue light therapy">
         <div class="specs">
           <div class="marker">
             <p>Relax</p>

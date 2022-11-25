@@ -146,6 +146,7 @@ h1,h2{
   margin-top: 40px; 
   display: inline-flex;
   flex-direction: row;
+  gap:2%;
   
 }
 
