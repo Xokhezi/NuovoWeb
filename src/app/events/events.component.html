@@ -1,6 +1,6 @@
 
-<div class="top center-content background-red">
-    <h1>Technologies</h1>
+<div class="top center-content background-blue">
+    <h1>Events</h1>
     <mat-card @slideTechno class="card">
         <mat-card-header>
             <mat-card-title>{{article.title}}</mat-card-title>
@@ -23,7 +23,7 @@
                 (mouseleave)="hoverSwitchLeft()" [class.bi-arrow-left-circle]="!hoverOnLeft"
                 [class.bi-arrow-left-circle-fill]="hoverOnLeft"></i>
 
-            <button class="btn btn-danger" [routerLink]="['/technology',article.id]">
+            <button class="btn btn-primary" [routerLink]="['/events',article.id]">
                 Detail</button>
 
             <i class="bi red fs-1 fr" (click)="switchArticle('next')" (mouseenter)="hoverSwitchRight()"

@@ -1,29 +1,28 @@
-import { ArticlesService } from './../services/articles.service';
-import { slideTechno } from './technology.animations';
+import { EventsService } from './../services/events.service';
 import { Component, OnInit } from '@angular/core';
+import { slideTechno } from '../technology/technology.animations';
 
 @Component({
-  selector: 'app-technology',
-  templateUrl: './technology.component.html',
-  styleUrls: ['./technology.component.css'],
+  selector: 'app-events',
+  templateUrl: './events.component.html',
+  styleUrls: ['./events.component.css'],
   animations:[
     slideTechno
   ]
 })
-export class TechnologyComponent implements OnInit {
-articles:any;
-page=1;
-article:any
-hoverOnLeft=false;
-hoverOnRight=false;
-  constructor(private service:ArticlesService) { 
+export class EventsComponent implements OnInit {
+  hoverOnLeft=false;
+  hoverOnRight=false;
+  article:any;
+  articles:any;
+ page=1;
+  constructor(private service:EventsService) { 
     this.articles=service.getTech();
     this.article=this.findArticle(this.page);
   }
 
   ngOnInit(): void {
   }
-
   findArticle(id:any)
   {
     let article = this.articles.find((obj: { id: any; })=>obj.id===id)

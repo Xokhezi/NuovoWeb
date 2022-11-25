@@ -1,11 +1,15 @@
 .top {
     padding-top: 0px;
 }
+h1{
+    margin-top: 0;
+    padding-top: 0;
+}
 .card {
     margin: 20px;
     max-width: 450px;
     border-radius: 20px;
-    
+
     box-shadow:
         2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
         6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
@@ -13,39 +17,46 @@
         22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
         41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
         100px 100px 80px rgba(0, 0, 0, 0.07);
-    border: solid 0,3px;
+    border: solid 0, 3px;
 }
-.red{
-    color: #d9534f;
+
+.red {
+    color: #0275d8;
 }
+
 .center-content {
     display: flex;
-    flex-direction:column ;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
     text-align: center;
-    
+
 }
-.fl{
+
+.fl {
     float: left;
 }
-.fr{
-    float:right;
+
+.fr {
+    float: right;
 }
-.mid{
+
+.mid {
     text-align: center;
 }
-.background-red{
+
+.background-red {
     min-height: 100vh;
-      height: auto;
-    background: rgb(255,220,226);
-    background: linear-gradient(90deg, rgba(255,220,226,1) 0%, rgba(255,255,255,1) 100%);
-  }
-  .background-blue{
+    height: auto;
+    background: rgb(255, 220, 226);
+    background: linear-gradient(90deg, rgba(255, 220, 226, 1) 0%, rgba(255, 255, 255, 1) 100%);
+}
+
+.background-blue {
     min-height: 100vh;
-      height: auto;  
-    background: rgb(227,226,246);
-    background: linear-gradient(90deg, rgba(227,226,246,1) 0%, rgba(255,255,255,1) 100%);
-  }
+    height: auto;
+    background: rgb(227, 226, 246);
+    background: linear-gradient(90deg, rgba(227, 226, 246, 1) 0%, rgba(255, 255, 255, 1) 100%);
+}
