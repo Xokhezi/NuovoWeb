@@ -1,0 +1,19 @@
+<div class="background-blue">
+    <div class="top">
+        <i class="bi red fs-1" (mouseenter)="hoverSwitchLeft()" (mouseleave)="hoverSwitchLeft()"
+            [class.bi-arrow-left-circle]="!hoverOnLeft" [class.bi-arrow-left-circle-fill]="hoverOnLeft"
+            [routerLink]="['/events']"
+            matTooltip="Back to articles"
+            [matTooltipPosition]="'right'"></i>
+        <div class="center-content ">
+
+            <h1>{{article.title}}</h1>
+            <div class="card">
+                <p class="pad">{{article.text}}</p>
+            </div>
+
+            <img mat-card-image src={{article.img}} alt="Nuovo Therapy article">
+
+        </div>
+    </div>
+</div>

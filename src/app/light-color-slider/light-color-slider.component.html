@@ -26,29 +26,26 @@
             have suffered alteration in some form, by injected humour, or randomised words which don't look even
             slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't
             anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to
-            repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a
-            dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem
-            Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected
-            humour, or non-characteristic words etc.</p>
+            repeat predefined chunks as necessary, making this the first true generator on the Internet.</p>
           <button class="btn btn-danger">More</button>
         </div>
       </div>
       <div class="red-text ">
         <h2 class="marg-cont">
           <button mat-icon-button aria-label="Example icon button with a vertical three dot icon">
-            <mat-icon><span class="material-symbols-outlined">
+            <mat-icon><span class="material-symbols-outlined" (click)="switchProduct('previous', 'red')">
                 arrow_back_ios
               </span></mat-icon>
           </button>
-          RD1500
+          {{product.name}}
           <button mat-icon-button aria-label="Example icon button with a vertical three dot icon">
-            <mat-icon><span class="material-symbols-outlined">
+            <mat-icon><span class="material-symbols-outlined" (click)="switchProduct('next', 'red')">
                 arrow_forward_ios
               </span></mat-icon>
           </button>
         </h2>
 
-        <img width="300px" height="400px" src="assets/red.png" alt="Red light therapy">
+        <img class="img" src="{{product.url}}" alt="Red light therapy">
         <div class="specs">
           <div class="marker">
             <p>Strengh</p>
@@ -74,28 +71,25 @@
             have suffered alteration in some form, by injected humour, or randomised words which don't look even
             slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't
             anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to
-            repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a
-            dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem
-            Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected
-            humour, or non-characteristic words etc.</p>
+            repeat predefined chunks as necessary, making this the first true generator on the Internet.</p>
           <button class="btn btn-primary">More</button>
         </div>
       </div>
       <div class="blue-text ">
         <h2 class="marg-cont">
           <button mat-icon-button aria-label="Example icon button with a vertical three dot icon">
-            <mat-icon><span class="material-symbols-outlined">
+            <mat-icon><span class="material-symbols-outlined" (click)="switchProduct('previous', 'blue')">
                 arrow_back_ios
               </span></mat-icon>
           </button>
-          RD500 Blue
+          {{product.name}}
           <button mat-icon-button aria-label="Example icon button with a vertical three dot icon">
-            <mat-icon><span class="material-symbols-outlined">
+            <mat-icon><span class="material-symbols-outlined" (click)="switchProduct('next', 'blue')">
                 arrow_forward_ios
               </span></mat-icon>
           </button>
         </h2>
-        <img width="300px" height="400px" src="assets/blue.png" alt="Blue light therapy">
+        <img class="img" src={{product.url}} alt="Blue light therapy">
         <div class="specs">
           <div class="marker">
             <p>Relax</p>

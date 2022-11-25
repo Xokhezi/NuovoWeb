@@ -20,6 +20,8 @@ import { ContactComponent } from './contact/contact.component';
 import { TechnologyComponent } from './technology/technology.component';
 import { TechnoArticleComponent } from './techno-article/techno-article.component';
 import {MatTooltipModule} from '@angular/material/tooltip';
+import { EventsComponent } from './events/events.component';
+import { SingleEventComponent } from './single-event/single-event.component';
 
 
 @NgModule({
@@ -31,7 +33,9 @@ import {MatTooltipModule} from '@angular/material/tooltip';
     NotFoundComponent,
     ContactComponent,
     TechnologyComponent,
-    TechnoArticleComponent
+    TechnoArticleComponent,
+    EventsComponent,
+    SingleEventComponent
   ],
   imports: [
     BrowserModule,
@@ -50,6 +54,8 @@ import {MatTooltipModule} from '@angular/material/tooltip';
       {path:'products',component:ProductsComponent},
       {path:'technology',component:TechnologyComponent},
       {path:'technology/:id',component:TechnoArticleComponent},
+      {path:'events',component:EventsComponent},
+      {path:'events/:id',component:SingleEventComponent},
       {path:'contact',component:ContactComponent},
       {path:'**',component:NotFoundComponent}
       

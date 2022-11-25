@@ -1,3 +1,4 @@
+import { ProductsService } from './../services/products.service';
 import { Component, OnInit } from '@angular/core';
 import { reduce } from 'rxjs';
 import { slideProducts } from './products.animations';
@@ -12,17 +13,11 @@ import { slideProducts } from './products.animations';
 })
 export class ProductsComponent {
   products: any;
-  text: any;
   results: any;
   entry: any;
-  constructor() {
-    this.text = 'lorem ipsum peckum tadum tudum tamtum jedum';
-    this.products = [
-      { id: 1, name: 'Rd1500', category: 'red', summary: this.text, url: 'assets/red.png' },
-      { id: 2, name: 'Rd500', category: 'blue', summary: this.text, url: 'assets/red.png' },
-      { id: 3, name: 'Rd3000', category: 'blue', summary: this.text, url: 'assets/red.png' },
-      { id: 4, name: 'Rd6000', category: 'red', summary: this.text, url: 'assets/red.png' },
-    ]
+  constructor(private service:ProductsService) {
+   
+    this.products = service.getProducts();
     this.results = this.products;
   }
 
